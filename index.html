@@ -2,6 +2,13 @@
 <!-- https://aframe.io/blog/arjs/ -->
 <!-- hello -->
 
+<!-- https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A207.gltf?v=1685806704645
+https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A208.gltf?v=1686030129144
+https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A305.gltf?v=1686030131881
+https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A408.gltf?v=1686030132631
+https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A002.gltf?v=1686030133219
+https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=1686030133845 -->
+
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
@@ -57,21 +64,35 @@
     
     <a-assets>
       <a-asset-item id="draw01" src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A207.gltf?v=1685806704645"></a-asset-item>
-      <!-- <a-asset-item id="draw01" src="https://github.com/ChunRed/SunnyTown/blob/main/model/A207.gltf"></a-asset-item> -->
+      <a-asset-item id="draw02" src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A208.gltf?v=1686030129144"></a-asset-item>
     </a-assets>
     
     <a-light type="ambient" intensity="2"></a-light>
     
+    <!-- draw01 -->
     <a-marker type="barcode" value="0" smooth="true" smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
-        
       <a-entity type="model" 
                 gltf-model="#draw01" 
                 animation-mixer 
                 position="0 0 0" 
                 rotation="0 -90 90" 
                 scale="33 33 33" 
-                shadow="receive: false;cast: true"></a-entity>
+                shadow="receive: false;cast: true">
+      </a-entity>
     </a-marker>
+
+    <!-- draw02 -->
+    <a-marker type="barcode" value="1" smooth="true" smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model" 
+                gltf-model="#draw02" 
+                animation-mixer 
+                position="0 0 0" 
+                rotation="0 -90 90" 
+                scale="33 33 33" 
+                shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
     
     <a-entity camera></a-entity>
     

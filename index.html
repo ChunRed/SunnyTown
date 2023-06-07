@@ -52,7 +52,7 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
 
 <body style="margin : 0px; overflow: hidden;">
 
-  <div class="container-fluid" style="position:relative; margin-top: 0%;">
+  <div id="intro" class="container-fluid">
     
     <div class="row">
       <div class="col"></div>
@@ -63,46 +63,46 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
 
         <div class="border-top border-white my-3 "></div>
 
-        <div class="overflow-scroll  text-white" style="height: 50%;">
-          <p>{{ Header.about }}</p>
-          <div class="border-top border-white my-3 "></div>
-          <p>{{Header.cvGRed.name}}</p>
-          <p>{{Header.cvGRed.aboutCN}}</p>
-          <p>{{Header.cvGRed.aboutEN}}</p>
-          <p>{{Header.cvGRed.l1}}</p>
-          <p>{{Header.cvGRed.l2}}</p>
-          <p>{{Header.cvGRed.l3}}</p>
-          <p>{{Header.cvGRed.l4}}</p>
+          <div class="overflow-scroll  text-white" style="z-index: 2; height: 50%;">
+            <p>{{ Header.about }}</p>
+            <div class="border-top border-white my-3 "></div>
+            <p>{{Header.cvGRed.name}}</p>
+            <p>{{Header.cvGRed.aboutCN}}</p>
+            <p>{{Header.cvGRed.aboutEN}}</p>
+            <p>{{Header.cvGRed.l1}}</p>
+            <p>{{Header.cvGRed.l2}}</p>
+            <p>{{Header.cvGRed.l3}}</p>
+            <p>{{Header.cvGRed.l4}}</p>
 
-          <div class="border-top border-white my-5 "></div>
+            <div class="border-top border-white my-5 "></div>
 
-          <p>{{Header.cvJH.name}}</p>
-          <p>{{Header.cvJH.aboutCN}}</p>
-          <p>{{Header.cvJH.aboutEN}}</p>
-          <p>{{Header.cvJH.l1}}</p>
-          <p>{{Header.cvJH.l2}}</p>
-          <p>{{Header.cvJH.l3}}</p>
-          <p>{{Header.cvJH.l4}}</p>
-          
-          <div class="my-5" style="min-height: 100%;" ></div>
-          
-          
+            <p>{{Header.cvJH.name}}</p>
+            <p>{{Header.cvJH.aboutCN}}</p>
+            <p>{{Header.cvJH.aboutEN}}</p>
+            <p>{{Header.cvJH.l1}}</p>
+            <p>{{Header.cvJH.l2}}</p>
+            <p>{{Header.cvJH.l3}}</p>
+            <p>{{Header.cvJH.l4}}</p>
+
+            <div class="border-top border-white my-5 "></div>
+            
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="myFunction()">開始</button>
+            </div>
+            
+            <div class="my-5" style="height: 100%;" ></div>
+            
+            
+
+          </div>
         </div>
-
+        <div class="col"></div>
       </div>
-
-      <div class="col"></div>
-
     </div>
-
-  </div>
-  
   <div>
 
   </div>
   <a-scene 
-    
-    
     embedded
     arjs="
       trackingMethod: best; 
@@ -111,7 +111,7 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
       detectionMode: mono_and_matrix; 
       matrixCodeType: 3x3;
       imageSmoothingEnabled : true">
-
+    
     
     <a-assets>
       <a-asset-item id="draw01" src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A207.gltf?v=1685806704645"></a-asset-item>

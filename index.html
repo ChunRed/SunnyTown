@@ -23,10 +23,14 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
   <!-- of the 3D model of the robot -->
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>   
   
+  <!-- vue.js@3 CDN -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js' integrity='sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA==' crossorigin='anonymous'></script>
+
 
   <!-- Load bootstrap CDN -->
   <!-- bootstrap css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
   
   
   
@@ -48,23 +52,31 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
 
 <body style="margin : 0px; overflow: hidden;">
 
-  <div class="container ">
+  <div class="container-fluid" style="position:relative; margin-top: 0%;">
+    
     <div class="row">
       <div class="col"></div>
 
       <div class="col-6">
 
-        <h5 class="card-title text-white my-5">天氣晴朗的小鎮上</h5>
+        <h5 class="card-title text-white my-5">{{ Header.title }}</h5>
+
         <div class="border-top border-white my-3 "></div>
 
-        <div class="overflow-scroll  text-white" style="max-height: 27%;">
-          <p>
-            This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. 
-          </p>
+        <div class="overflow-scroll  text-white" style="max-height: 70%;">
+          <p>{{ Header.about }}</p>
           <div class="border-top border-white my-3 "></div>
-          <p>
-            This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. By design, this content will vertically scroll.This is an example of usingon an element with set width and height dimensions. 
-          </p>
+          <p>{{Header.cvGRed.name}}</p>
+          <p>{{Header.cvGRed.aboutCN}}</p>
+          <p>{{Header.cvGRed.aboutEN}}</p>
+          <p>{{Header.cvGRed.l1}}</p>
+          <p>{{Header.cvGRed.l2}}</p>
+          <p>{{Header.cvGRed.l3}}</p>
+          <p>{{Header.cvGRed.l4}}</p>
+          <p>{{Header.cvGRed.l1}}</p>
+          <p>{{Header.cvGRed.l2}}</p>
+          <p>{{Header.cvGRed.l3}}</p>
+          <p>{{Header.cvGRed.l4}}</p>
         </div>
 
       </div>
@@ -125,4 +137,7 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
     <a-entity camera></a-entity>
     
   </a-scene>
+
+  <script src="index.js"></script>
+
 </body>

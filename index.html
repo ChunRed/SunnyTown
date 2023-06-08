@@ -9,6 +9,7 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A408.gltf?v=16860
 https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A002.gltf?v=1686030133219
 https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=1686030133845 -->
 
+
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
@@ -29,8 +30,13 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
 
   <!-- Load bootstrap CDN -->
   <!-- bootstrap css-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  
+  <!-- Load bootstrap CDN -->
+  <!-- bootstrap css-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   
   
   
@@ -51,38 +57,47 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-
-  <div id="intro" class="container-fluid">
-    
+  
+  <div  class="container-fluid">
     <div class="row">
       <div class="col"></div>
-
       <div class="col-6">
-
-        <h5 class="card-title text-white my-5">{{ Header.title }}</h5>
-
+        <nav class="navbar navbar-expand-lg  navbar-dark " >
+          <a class="navbar-brand" href="#" >{{ Header.title }}</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Intro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">painting art</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div id="intro" class="row">
+      <div class="col"></div>
+      <div class="col-6">
         <div class="border-top border-white my-3 "></div>
-
-          <div class="overflow-scroll  text-white" style="z-index: 2; height: 50%;">
-            <p>{{ Header.about }}</p>
+          <div class="overflow-scroll  text-white" style="z-index: 2; height: 100%;">
+            <p>{{ Header.aboutCN }}</p>
+            <p>{{ Header.aboutEN }}</p>
             <div class="border-top border-white my-3 "></div>
             <p>{{Header.cvGRed.name}}</p>
             <p>{{Header.cvGRed.aboutCN}}</p>
             <p>{{Header.cvGRed.aboutEN}}</p>
-            <p>{{Header.cvGRed.l1}}</p>
-            <p>{{Header.cvGRed.l2}}</p>
-            <p>{{Header.cvGRed.l3}}</p>
-            <p>{{Header.cvGRed.l4}}</p>
 
             <div class="border-top border-white my-5 "></div>
 
             <p>{{Header.cvJH.name}}</p>
             <p>{{Header.cvJH.aboutCN}}</p>
             <p>{{Header.cvJH.aboutEN}}</p>
-            <p>{{Header.cvJH.l1}}</p>
-            <p>{{Header.cvJH.l2}}</p>
-            <p>{{Header.cvJH.l3}}</p>
-            <p>{{Header.cvJH.l4}}</p>
 
             <div class="border-top border-white my-5 "></div>
             

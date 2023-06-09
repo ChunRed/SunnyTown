@@ -40,11 +40,16 @@ Vue.createApp({
 }).mount('.container-fluid')
 
 
-function myFunction() {
+function IntroFunction() {
     var x = document.getElementById("intro");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
+  }
+
+function IntroHide() {
+    var x = document.getElementById("intro");
+    x.style.display = "none";
   }

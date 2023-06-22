@@ -44,118 +44,12 @@ function IntroFunction() {
     var x = document.getElementById("intro");
     if (x.style.display === "none") {
       x.style.display = "block";
-      document.querySelector('.pictureCard').style.display = "none";
     } else {
       x.style.display = "none";
-      document.querySelector('.pictureCard').style.display = "block";
     }
   }
 
 function IntroHide() {
     var x = document.getElementById("intro");
     x.style.display = "none";
-    document.querySelector('.pictureCard').style.display = "block";
   }
-
-
-//判斷是哪一個marker被掃瞄到
-var marker01 = document.querySelector(".draw01");
-var marker02 = document.querySelector(".draw02");
-var marker03 = document.querySelector(".draw03");
-var marker04 = document.querySelector(".draw04");
-var marker05 = document.querySelector(".draw05");
-var marker06 = document.querySelector(".draw06");
-
-marker01.addEventListener("markerFound", (e)=>{
-  console.log("found 01");
-  pictureCard(1, true);
-})
-marker01.addEventListener("markerLost", (e)=>{
-  console.log("lost 01");
-  pictureCard(1, false);
-})
-
-marker02.addEventListener("markerFound", (e)=>{
-  console.log("found 02");
-  pictureCard(2, true);
-})
-marker02.addEventListener("markerLost", (e)=>{
-  console.log("lost 02");
-  pictureCard(2, false);
-})
-
-marker03.addEventListener("markerFound", (e)=>{
-  console.log("found 03");
-  pictureCard(3, true);
-})
-marker03.addEventListener("markerLost", (e)=>{
-  console.log("lost 03");
-  pictureCard(3, false);
-})
-
-marker04.addEventListener("markerFound", (e)=>{
-  console.log("found 04");
-  pictureCard(4, true);
-})
-marker04.addEventListener("markerLost", (e)=>{
-  console.log("lost 04");
-  pictureCard(4, false);
-})
-
-marker05.addEventListener("markerFound", (e)=>{
-  console.log("found 05");
-  pictureCard(5, true);
-})
-marker05.addEventListener("markerLost", (e)=>{
-  console.log("lost 05");
-  pictureCard(5, false);
-})
-
-marker06.addEventListener("markerFound", (e)=>{
-  console.log("found 06");
-  pictureCard(6, true);
-})
-marker06.addEventListener("markerLost", (e)=>{
-  console.log("lost 06");
-  pictureCard(6, false);
-})
-
-
-
-
-//picture card fade in & fade out 動畫
-pictureCard("", false);
-function pictureCard(index="", status = false){
-  const element =  document.querySelector('.pictureCard');
-  const picture = document.querySelector('.painting');
-  picture.src = "painting/"+index+".jpg";
-  if(status){
-    setTimeout(function() {
-      element.classList.remove('fadeOutLeft'); 
-    }, 0); 
-    element.classList.add('animated', 'fadeInLeft');
-     setTimeout(function() {
-      element.classList.remove('fadeInLeft'); 
-    }, 1000); 
-  }
-  else{
-    element.classList.add('animated', 'fadeOutLeft');
-  }
-}
-
-
-// AFRAME.registerComponent('registerevents', {
-//   init: function () {
-//       var marker = this.el;
-//       marker.addEventListener('markerFound', function() {
-//           var markerId = marker.id;
-//           console.log('! markerFound' + markerId);
-//           // do additional things you want to do
-//       });
-//       marker.addEventListener('markerLost', function() {
-//           var markerId = marker.id;
-//           console.log('! markerLost', markerId);
-//           // do additional things you want to do
-//       });
-//   }
-// });

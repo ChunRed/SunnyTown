@@ -28,6 +28,37 @@ Vue.createApp({
           aboutEN: "Graduate Institute of Art and Technology, National Tsing Hua University\nExploring different media, beyond physical or virtual methods. Using art as a communication language to observe social phenomena with personal values.",
 
         },
+        picture: {
+          img01:"painting/1.jpg",
+          intro01:"我家對面 | 謝昊恩",
+
+          img02:"painting/2.jpg",
+          intro02:"士兵的軍團 | 洪景睿",
+
+          img03:"painting/3.jpg",
+          intro03:"達悟族飛魚祭 | 簡梃勳",
+
+          img04:"painting/4.jpg",
+          intro04:"夜市小吃 | 何云希",
+
+          img05:"painting/5.jpg",
+          intro05:"機器人的家 | 陳科逸",
+
+          img06:"painting/6.jpg",
+          intro06:"我和親愛的阿公 | 王苡霓",
+
+          img07:"painting/7.jpg",
+          intro07:"我的美麗媽媽 | 許彤瑋",
+
+          img08:"painting/8.jpg",
+          intro08:"坐電動公車遊嘉義 | 方譽程",
+
+          img09:"painting/9.jpg",
+          intro09:"阿美族豐年祭 | 蔡子琦",
+
+          img10:"painting/10.jpg",
+          intro10:"幻想貓星球 | 林承勳",
+        },
       },
     }
   },
@@ -137,28 +168,28 @@ marker06.addEventListener("markerLost", (e) => {
 
 
 //picture card fade in & fade out 動畫
-pictureCard("", false);
-function pictureCard(index = "", status = false) {
-  if(document.getElementById("picture").style.display == "none" &&
-      document.getElementById("intro").style.display == "none"){
-    document.querySelector('.pictureCard').style.display = "block";
-  }
-  const element = document.querySelector('.pictureCard');
-  const picture = document.querySelector('.painting');
-  picture.src = "painting/" + index + ".jpg";
-  if (status) {
-    setTimeout(function () {
-      element.classList.remove('fadeOutLeft');
-    }, 0);
-    element.classList.add('animated', 'fadeInLeft');
-    setTimeout(function () {
-      element.classList.remove('fadeInLeft');
-    }, 1000);
-  }
-  else {
-    element.classList.add('animated', 'fadeOutLeft');
-  }
-}
+// pictureCard("", false);
+// function pictureCard(index = "", status = false) {
+//   if(document.getElementById("picture").style.display == "none" &&
+//       document.getElementById("intro").style.display == "none"){
+//     document.querySelector('.pictureCard').style.display = "block";
+//   }
+//   const element = document.querySelector('.pictureCard');
+//   const picture = document.querySelector('.painting');
+//   picture.src = "painting/" + index + ".jpg";
+//   if (status) {
+//     setTimeout(function () {
+//       element.classList.remove('fadeOutLeft');
+//     }, 0);
+//     element.classList.add('animated', 'fadeInLeft');
+//     setTimeout(function () {
+//       element.classList.remove('fadeInLeft');
+//     }, 1000);
+//   }
+//   else {
+//     element.classList.add('animated', 'fadeOutLeft');
+//   }
+// }
 
 
 // AFRAME.registerComponent('registerevents', {

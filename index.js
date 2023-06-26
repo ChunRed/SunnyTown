@@ -103,66 +103,66 @@ function PictureFunction() {
 
 
 //判斷是哪一個marker被掃瞄到
-var marker01 = document.querySelector(".draw01");
-var marker02 = document.querySelector(".draw02");
-var marker03 = document.querySelector(".draw03");
-var marker04 = document.querySelector(".draw04");
-var marker05 = document.querySelector(".draw05");
-var marker06 = document.querySelector(".draw06");
+// var marker01 = document.querySelector(".draw01");
+// var marker02 = document.querySelector(".draw02");
+// var marker03 = document.querySelector(".draw03");
+// var marker04 = document.querySelector(".draw04");
+// var marker05 = document.querySelector(".draw05");
+// var marker06 = document.querySelector(".draw06");
 
-marker01.addEventListener("markerFound", (e) => {
-  console.log("found 01");
-  pictureCard(1, true);
-})
-marker01.addEventListener("markerLost", (e) => {
-  console.log("lost 01");
-  pictureCard(1, false);
-})
+// marker01.addEventListener("markerFound", (e) => {
+//   console.log("found 01");
+//   pictureCard(1, true);
+// })
+// marker01.addEventListener("markerLost", (e) => {
+//   console.log("lost 01");
+//   pictureCard(1, false);
+// })
 
-marker02.addEventListener("markerFound", (e) => {
-  console.log("found 02");
-  pictureCard(2, true);
-})
-marker02.addEventListener("markerLost", (e) => {
-  console.log("lost 02");
-  pictureCard(2, false);
-})
+// marker02.addEventListener("markerFound", (e) => {
+//   console.log("found 02");
+//   pictureCard(2, true);
+// })
+// marker02.addEventListener("markerLost", (e) => {
+//   console.log("lost 02");
+//   pictureCard(2, false);
+// })
 
-marker03.addEventListener("markerFound", (e) => {
-  console.log("found 03");
-  pictureCard(3, true);
-})
-marker03.addEventListener("markerLost", (e) => {
-  console.log("lost 03");
-  pictureCard(3, false);
-})
+// marker03.addEventListener("markerFound", (e) => {
+//   console.log("found 03");
+//   pictureCard(3, true);
+// })
+// marker03.addEventListener("markerLost", (e) => {
+//   console.log("lost 03");
+//   pictureCard(3, false);
+// })
 
-marker04.addEventListener("markerFound", (e) => {
-  console.log("found 04");
-  pictureCard(4, true);
-})
-marker04.addEventListener("markerLost", (e) => {
-  console.log("lost 04");
-  pictureCard(4, false);
-})
+// marker04.addEventListener("markerFound", (e) => {
+//   console.log("found 04");
+//   pictureCard(4, true);
+// })
+// marker04.addEventListener("markerLost", (e) => {
+//   console.log("lost 04");
+//   pictureCard(4, false);
+// })
 
-marker05.addEventListener("markerFound", (e) => {
-  console.log("found 05");
-  pictureCard(5, true);
-})
-marker05.addEventListener("markerLost", (e) => {
-  console.log("lost 05");
-  pictureCard(5, false);
-})
+// marker05.addEventListener("markerFound", (e) => {
+//   console.log("found 05");
+//   pictureCard(5, true);
+// })
+// marker05.addEventListener("markerLost", (e) => {
+//   console.log("lost 05");
+//   pictureCard(5, false);
+// })
 
-marker06.addEventListener("markerFound", (e) => {
-  console.log("found 06");
-  pictureCard(6, true);
-})
-marker06.addEventListener("markerLost", (e) => {
-  console.log("lost 06");
-  pictureCard(6, false);
-})
+// marker06.addEventListener("markerFound", (e) => {
+//   console.log("found 06");
+//   pictureCard(6, true);
+// })
+// marker06.addEventListener("markerLost", (e) => {
+//   console.log("lost 06");
+//   pictureCard(6, false);
+// })
 
 
 

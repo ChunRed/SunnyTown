@@ -70,10 +70,10 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#" onclick="myFunction()">介紹<br>Intro</a>
+                <a class="nav-link" href="#" onclick="introFunction()">介紹<br>Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">使用圖畫<br>painting art</a>
+                <a class="nav-link" href="#" onclick="pictureFunction()">使用圖畫<br>painting art</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">世界兒童繪畫展<br>World School Children's Paintings Exhibition</a>
@@ -88,6 +88,9 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
       <!-- <div class="col"></div> -->
       <div  class="col ">
         <div class="border-top border-white my-3 "></div>
+
+
+          <!-- intro page -->
           <div id="intro" class="overflow-scroll  text-white" style="z-index: 2; height: 100%;">
             <p>{{ Header.aboutCN }}</p>
             <p>{{ Header.aboutEN }}</p>
@@ -105,13 +108,102 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
             <div class="border-top border-white my-5 "></div>
             
             <div class="text-center">
-              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="myFunction()">開始</button>
+              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="introFunction()">開始</button>
             </div>
             
             <div class="my-5" style="height: 100%;" ></div>
-            
-            
+          </div>
 
+
+          <!-- picture page -->
+          <div id="picture" class="overflow-scroll  text-white" style="z-index: 2; height: 100%; display: none;">
+            
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/1.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">我家對面 | 謝昊恩</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/2.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">士兵的軍團 | 洪景睿</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/3.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">達悟族飛魚祭 | 簡梃勳</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/4.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">夜市小吃 | 何云希</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/5.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">機器人的家 | 陳科逸</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/6.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">我和親愛的阿公 | 王苡霓</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/7.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">我的美麗媽媽 | 許彤瑋</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/8.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">坐電動公車遊嘉義 | 方譽程</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/9.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">阿美族豐年祭 | 蔡子琦</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-3 "></div>
+            <div class="card text-bg-dark">
+              <img src="painting/10.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">幻想貓星球 | 林承勳</h5>
+              </div>
+            </div>
+
+            <div class="border-top border-white my-5 "></div>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="pictureFunction()">開始</button>
+            </div>
+            
+            <div class="my-5" style="height: 100%;" ></div>
           </div>
         </div>
         <!-- <div class="col"></div> -->

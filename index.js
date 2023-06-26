@@ -40,10 +40,23 @@ Vue.createApp({
 }).mount('.container-fluid')
 
 
-function myFunction() {
+function introFunction() {
   var x = document.getElementById("intro");
+  var y = document.getElementById("picture");
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function pictureFunction() {
+  var x = document.getElementById("picture");
+  var y = document.getElementById("intro");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
   } else {
     x.style.display = "none";
   }

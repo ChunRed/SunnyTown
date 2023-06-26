@@ -72,7 +72,7 @@ Vue.createApp({
 
 function IntroFunction() {
   var x = document.getElementById("intro");
-  var y = document.getElementById("picture");
+  // var y = document.getElementById("picture");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
@@ -82,17 +82,17 @@ function IntroFunction() {
   }
 }
 
-function PictureFunction() {
-  var x = document.getElementById("picture");
-  var y = document.getElementById("intro");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-    // document.querySelector('.pictureCard').style.display = "none";
-  } else {
-    x.style.display = "none";
-  }
-}
+// function PictureFunction() {
+//   var x = document.getElementById("picture");
+//   var y = document.getElementById("intro");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//     y.style.display = "none";
+//     // document.querySelector('.pictureCard').style.display = "none";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
 
 
 // function IntroHide() {

@@ -9,37 +9,50 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A408.gltf?v=16860
 https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A002.gltf?v=1686030133219
 https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=1686030133845 -->
 
-
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-   
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-   
+
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
   <!-- Load the required dependencies: A-frame and AR.js -->
   <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+  <script
+    src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
 
   <!-- This is to load the A-frame extras, that contain the required components that are used to show the animations -->
   <!-- of the 3D model of the robot -->
-  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>   
-  
+  <script
+    src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
   <!-- vue.js@3 CDN -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js' integrity='sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA==' crossorigin='anonymous'></script>
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js'
+    integrity='sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA=='
+    crossorigin='anonymous'></script>
 
   <!-- Load bootstrap CDN -->
   <!-- bootstrap css-->
   <!-- Load bootstrap CDN -->
   <!-- bootstrap css-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  
-  
-  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous">
+
   <script>
     window.onload = function(){    
       setTimeout(function(){
@@ -48,24 +61,24 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
         window.dispatchEvent(resizeEvent);
       }, 5000);
     }; 
-  </script>  
-
+  </script>
 
   <title>世界兒童繪畫</title>
-
 
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  
-  <div  class="container-fluid fixed-top mx-auto">
+
+  <div class="container-fluid fixed-top mx-auto">
     <div class="row ">
-      
+
       <div class="col">
-        <nav class="navbar navbar-expand-lg  navbar-dark " >
-          <a class="navbar-brand" href="#" >{{ Header.title }}</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" ></span>
+        <nav class="navbar navbar-expand-lg  navbar-dark ">
+          <a class="navbar-brand" href="#">{{ Header.title }}</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -73,146 +86,150 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
                 <a class="nav-link" href="#" onclick="introFunction()">介紹<br>Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="pictureFunction()">使用圖畫<br>painting art</a>
+                <a class="nav-link" href="#" onclick="pictureFunction()">使用圖畫<br>painting
+                  art</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">世界兒童繪畫展<br>World School Children's Paintings Exhibition</a>
+                <a class="nav-link" href="#">世界兒童繪畫展<br>World School Children's
+                  Paintings Exhibition</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-      
+
     </div>
-    <div  class="row">
+    <div class="row">
       <!-- <div class="col"></div> -->
-      <div  class="col ">
+      <div class="col ">
         <div class="border-top border-white my-3 "></div>
 
+        <!-- intro page -->
+        <div id="intro" class="overflow-scroll  text-white"
+          style="z-index: 2; height: 100%;">
+          <p>{{ Header.aboutCN }}</p>
+          <p>{{ Header.aboutEN }}</p>
+          <div class="border-top border-white my-3 "></div>
+          <p>{{Header.cvGRed.name}}</p>
+          <p>{{Header.cvGRed.aboutCN}}</p>
+          <p>{{Header.cvGRed.aboutEN}}</p>
 
-          <!-- intro page -->
-          <div id="intro" class="overflow-scroll  text-white" style="z-index: 2; height: 100%;">
-            <p>{{ Header.aboutCN }}</p>
-            <p>{{ Header.aboutEN }}</p>
-            <div class="border-top border-white my-3 "></div>
-            <p>{{Header.cvGRed.name}}</p>
-            <p>{{Header.cvGRed.aboutCN}}</p>
-            <p>{{Header.cvGRed.aboutEN}}</p>
+          <div class="border-top border-white my-5 "></div>
 
-            <div class="border-top border-white my-5 "></div>
+          <p>{{Header.cvJH.name}}</p>
+          <p>{{Header.cvJH.aboutCN}}</p>
+          <p>{{Header.cvJH.aboutEN}}</p>
 
-            <p>{{Header.cvJH.name}}</p>
-            <p>{{Header.cvJH.aboutCN}}</p>
-            <p>{{Header.cvJH.aboutEN}}</p>
+          <div class="border-top border-white my-5 "></div>
 
-            <div class="border-top border-white my-5 "></div>
-            
-            <div class="text-center">
-              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="introFunction()">開始</button>
-            </div>
-            
-            <div class="my-5" style="height: 100%;" ></div>
+          <div class="text-center">
+            <button type="button" class="btn btn-outline-light btn-block w-100"
+              onclick="introFunction()">開始</button>
           </div>
 
-
-          <!-- picture page -->
-          <div id="picture" class="overflow-scroll  text-white" style="z-index: 2; height: 100%; display: none;">
-            
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/1.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">我家對面 | 謝昊恩</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/2.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">士兵的軍團 | 洪景睿</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/3.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">達悟族飛魚祭 | 簡梃勳</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/4.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">夜市小吃 | 何云希</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/5.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">機器人的家 | 陳科逸</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/6.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">我和親愛的阿公 | 王苡霓</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/7.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">我的美麗媽媽 | 許彤瑋</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/8.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">坐電動公車遊嘉義 | 方譽程</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/9.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">阿美族豐年祭 | 蔡子琦</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-3 "></div>
-            <div class="card text-bg-dark">
-              <img src="painting/10.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">幻想貓星球 | 林承勳</h5>
-              </div>
-            </div>
-
-            <div class="border-top border-white my-5 "></div>
-            <div class="text-center">
-              <button type="button" class="btn btn-outline-light btn-block w-100"onclick="pictureFunction()">開始</button>
-            </div>
-            
-            <div class="my-5" style="height: 100%;" ></div>
-          </div>
+          <div class="my-5" style="height: 100%;"></div>
         </div>
-        <!-- <div class="col"></div> -->
+
+        <!-- picture page -->
+        <div id="picture" class="overflow-scroll  text-white"
+          style="z-index: 2; height: 100%; display: none;">
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">我家對面 | 謝昊恩</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/2.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">士兵的軍團 | 洪景睿</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/3.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">達悟族飛魚祭 | 簡梃勳</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/4.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">夜市小吃 | 何云希</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/5.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">機器人的家 | 陳科逸</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/6.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">我和親愛的阿公 | 王苡霓</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/7.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">我的美麗媽媽 | 許彤瑋</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/8.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">坐電動公車遊嘉義 | 方譽程</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/9.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">阿美族豐年祭 | 蔡子琦</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-3 "></div>
+          <div class="card text-bg-dark">
+            <img src="painting/10.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">幻想貓星球 | 林承勳</h5>
+            </div>
+          </div>
+
+          <div class="border-top border-white my-5 "></div>
+          <div class="text-center">
+            <button type="button" class="btn btn-outline-light btn-block w-100"
+              onclick="pictureFunction()">開始</button>
+          </div>
+
+          <div class="my-5" style="height: 100%;"></div>
+        </div>
       </div>
+      <!-- <div class="col"></div> -->
     </div>
+  </div>
   <div>
 
   </div>
-  <a-scene 
+  <a-scene
     embedded
     arjs="
       trackingMethod: best; 
@@ -221,41 +238,166 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
       detectionMode: mono_and_matrix; 
       matrixCodeType: 3x3;
       imageSmoothingEnabled : true">
-    
-    
+
     <a-assets>
-      <a-asset-item id="draw01" src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A207.gltf?v=1685806704645"></a-asset-item>
-      <a-asset-item id="draw02" src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A208.gltf?v=1686030129144"></a-asset-item>
+
+
+      <a-asset-item id="draw01"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A207.gltf?v=1685806704645"></a-asset-item>
+      <a-asset-item id="draw02"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A208.gltf?v=1686030129144"></a-asset-item>
+      <a-asset-item id="draw03"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A305.gltf?v=1686030131881"></a-asset-item>
+      <a-asset-item id="draw04"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A408.gltf?v=1686030132631"></a-asset-item>
+      <a-asset-item id="draw05"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A002.gltf?v=1686030133219"></a-asset-item>
+      <a-asset-item id="draw06"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=1686030133845"></a-asset-item>
+      <a-asset-item id="draw07"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A304.gltf?v=1686324228098"></a-asset-item>
+      <a-asset-item id="draw08"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A405.gltf?v=1686324230496"></a-asset-item>
+      <a-asset-item id="draw09"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A501.gltf?v=1686324231186"></a-asset-item>
+      <a-asset-item id="draw10"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
     </a-assets>
-    
+
     <a-light type="ambient" intensity="2"></a-light>
-    
+
     <!-- draw01 -->
-    <a-marker type="barcode" value="0" smooth="true" smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
-      <a-entity type="model" 
-                gltf-model="#draw01" 
-                animation-mixer 
-                position="0 0 0" 
-                rotation="0 -90 90" 
-                scale="33 33 33" 
-                shadow="receive: false;cast: true">
+    <a-marker class="draw01" type="barcode" value="0" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw01"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
       </a-entity>
     </a-marker>
 
     <!-- draw02 -->
-    <a-marker type="barcode" value="1" smooth="true" smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
-      <a-entity type="model" 
-                gltf-model="#draw02" 
-                animation-mixer 
-                position="0 0 0" 
-                rotation="0 -90 90" 
-                scale="33 33 33" 
-                shadow="receive: false;cast: true">
+    <a-marker class="draw02" type="barcode" value="1" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw02"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw03 -->
+    <a-marker class="draw03" type="barcode" value="2" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw03"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw04 -->
+    <a-marker class="draw04" type="barcode" value="4" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw04"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw05 -->
+    <a-marker class="draw05" type="barcode" value="5" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw05"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw06 -->
+    <a-marker class="draw06" type="barcode" value="6" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw06"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw07 -->
+    <a-marker class="draw07" type="barcode" value="7" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw07"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw08 -->
+    <a-marker class="draw08" type="barcode" value="8" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw08"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw06 -->
+    <a-marker class="draw09" type="barcode" value="9" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw09"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw06 -->
+    <a-marker class="draw10" type="barcode" value="10" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw010"
+        animation-mixer
+        position="0 0 0"
+        rotation="0 -90 90"
+        scale="33 33 33"
+        shadow="receive: false;cast: true">
       </a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
-    
+
   </a-scene>
 
   <script src="index.js"></script>

@@ -41,20 +41,34 @@ Vue.createApp({
 
 function IntroFunction() {
   var x = document.getElementById("intro");
+  var y = document.getElementById("picture");
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.style.display = "none";
     document.querySelector('.pictureCard').style.display = "none";
   } else {
     x.style.display = "none";
-    document.querySelector('.pictureCard').style.display = "block";
   }
 }
 
-function IntroHide() {
-  var x = document.getElementById("intro");
-  x.style.display = "none";
-  document.querySelector('.pictureCard').style.display = "block";
+function PictureFunction() {
+  var x = document.getElementById("picture");
+  var y = document.getElementById("intro");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    document.querySelector('.pictureCard').style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
 }
+
+
+// function IntroHide() {
+//   var x = document.getElementById("intro");
+//   x.style.display = "none";
+//   document.querySelector('.pictureCard').style.display = "block";
+// }
 
 
 //判斷是哪一個marker被掃瞄到
@@ -125,6 +139,10 @@ marker06.addEventListener("markerLost", (e) => {
 //picture card fade in & fade out 動畫
 pictureCard("", false);
 function pictureCard(index = "", status = false) {
+  if(document.getElementById("picture").style.display == "none" &&
+      document.getElementById("intro").style.display == "none"){
+    document.querySelector('.pictureCard').style.display = "block";
+  }
   const element = document.querySelector('.pictureCard');
   const picture = document.querySelector('.painting');
   picture.src = "painting/" + index + ".jpg";

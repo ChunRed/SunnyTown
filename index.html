@@ -24,13 +24,13 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script
-    src="https://raw.githack.com/AR-js-org/AR.js/dev/aframe/build/aframe-ar.js"></script>
+    src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
   <!-- This is to load the A-frame extras, that contain the required components that are used to show the animations -->
   <!-- of the 3D model of the robot -->
   <script
     src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
- 
+
   <!-- vue.js@3 CDN -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.js'
     integrity='sha512-boEFRnFthrf+bNt2FkCFAjd809yT4B9R5Kr1eTROVLdzT79sgQanuKUhu/R7eDHmWL8IcjHIkxjdEVvvP6DLMA=='
@@ -266,6 +266,26 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
         src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A501.gltf?v=1686324231186"></a-asset-item>
       <a-asset-item id="draw10"
         src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
+      <a-asset-item id="draw11"
+        src="https://cdn.glitch.me/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/G08.gltf?v=1691573079923"></a-asset-item>
+      <a-asset-item id="draw12"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
+      <a-asset-item id="draw13"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/Guatemala.gltf?v=1691573111243"></a-asset-item>
+      <a-asset-item id="draw14"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
+      <a-asset-item id="draw15"
+        src="https://cdn.glitch.me/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/S22.gltf?v=1691573127948"></a-asset-item>
+      <a-asset-item id="draw16"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
+      <a-asset-item id="draw17"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
+      <a-asset-item id="draw18"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/B50.gltf?v=1691573059967"></a-asset-item>
+      <a-asset-item id="draw19"
+        src="https://cdn.glitch.me/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/G14.gltf?v=1691573103918"></a-asset-item>
+      <a-asset-item id="draw20"
+        src="https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A407.gltf?v=1686472876140"></a-asset-item>
     </a-assets>
 
     <a-light type="ambient" intensity="1.5"></a-light>
@@ -392,6 +412,136 @@ https://cdn.glitch.global/a32647d7-c20a-4ce0-8e26-3cfbcfc261dc/A006.gltf?v=16860
       smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
       <a-entity type="model"
         gltf-model="#draw10"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw11 -->
+    <a-marker class="draw11" type="barcode" value="10" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw11"
+        animation-mixer
+        position="0.9 0 2.1"
+        rotation="0 90 -90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw12 -->
+    <a-marker class="draw12" type="barcode" value="11" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw12"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw13 -->
+    <a-marker class="draw13" type="barcode" value="12" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw13"
+        animation-mixer
+        position="0.2 0 -0.5"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw14 -->
+    <a-marker class="draw14" type="barcode" value="13" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw14"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw15 -->
+    <a-marker class="draw15" type="barcode" value="14" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw15"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0  90 -90 "
+        scale="34 34 34"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw16 -->
+    <a-marker class="draw16" type="barcode" value="15" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw16"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw17 -->
+    <a-marker class="draw17" type="barcode" value="16" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw17"
+        animation-mixer
+        position="-0.7 0 0.1"
+        rotation="0 -90 90"
+        scale="42 42 42"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw18 -->
+    <a-marker class="draw18" type="barcode" value="17" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw18"
+        animation-mixer
+        position="-0.3 0 0.1"
+        rotation="0 -90 90"
+        scale="37 37 37"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw19 -->
+    <a-marker class="draw19" type="barcode" value="18" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw19"
+        animation-mixer
+        position="-0.2 0 0.1"
+        rotation="0 -90 90"
+        scale="40 40 40"
+        shadow="receive: false;cast: true">
+      </a-entity>
+    </a-marker>
+
+    <!-- draw20 -->
+    <a-marker class="draw20" type="barcode" value="22" smooth="true"
+      smoothcount="5" smoothtolerance="0.1" smooththreshold="10">
+      <a-entity type="model"
+        gltf-model="#draw20"
         animation-mixer
         position="-0.7 0 0.1"
         rotation="0 -90 90"
